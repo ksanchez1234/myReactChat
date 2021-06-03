@@ -1,0 +1,162 @@
+/*App Body*/
+body {
+  background-color: #08182c;
+}
+/*App*/
+.App {
+  text-align: center;
+  max-width: 730px;
+  margin: 0 auto;
+}
+/*Header*/
+.App header {
+  background-color: black;
+  height: 12vh;
+  min-height: 60px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  max-width: 730px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+}
+/*App Mid Section (Where msgs are.)*/
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(37, 42, 53);
+}
+/*Main*/
+main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+main::-webkit-scrollbar-thumb {
+  background: #0a55c7;
+}
+
+form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+  max-width: 730px;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+/*Button that Submits Msg*/
+form button {
+  width: 20%;
+  background-color: rgb(56, 56, 143);
+}
+/*Message Input*/
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: rgb(58, 58, 58);
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+/*Sign Out Button*/
+button {
+  background-color: #242931;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+/*No Msg - Disabled icon*/
+button:disabled {
+  cursor: not-allowed;
+}
+/*Sign-In w/Google Button*/
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+/*Sign-In Msg*/
+.sign-in-msg {
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Hello Gif (Bird)*/
+.gif_pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 30%;
+  margin: 2px 5px;
+}
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+/*Messages on Chat*/
+.message {
+  display: flex;
+  align-items: center;
+}
+/*Sent Msgs*/
+.sent {
+  flex-direction: row-reverse;
+}
+.sent p {
+  color: white;
+  background: #1975ff;
+  align-self: flex-end;
+}
+/*Received*/
+.received p {
+  background: #e5e5ea;
+  color: black;
+}
+/*Profile Picture*/
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
